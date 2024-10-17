@@ -47,8 +47,95 @@
 			</div>
 		</div>
 	</div>
+
+	<br>
+	<br>
+
+	<h1 style="text-align:center;"><u>CSS FLEXBOX</u></h1>
+	<div class="flex">
+		<div>
+			<h3>justify-content: center; <br>
+			align-items: center;
+			<br>gap: 10px;
+		</h3>
+			<div class="box" style="justify-content: center;align-items: center;">
+				<div class="item">
+				</div>
+				<div class="item">
+				</div>
+				<div class="item">
+				</div>
+				<div class="item">
+				</div>
+				<div class="item">
+				</div>
+			</div>
+		</div>
+
+
+		<div>
+			<h3>justify-content: space-evenly; <br>
+			align-items: start;
+			<br>gap: 10px;
+		</h3>
+			<div class="box" style="justify-content: space-evenly;align-items: start;">
+				<div class="item">
+				</div>
+				<div class="item">
+				</div>
+				<div class="item">
+				</div>
+				<div class="item">
+				</div>
+				<div class="item">
+				</div>
+			</div>
+		</div>
+
+		<div>
+			<h3>justify-content: space-evenly; <br>
+			align-items: center; <br>
+			flex-direction: column;
+			<br>gap: 10px;
+
+		</h3>
+			<div class="box" style="justify-content: space-evenly;align-items: center; flex-direction: column;">
+				<div class="item">
+				</div>
+				<div class="item">
+				</div>
+				<div class="item">
+				</div>
+				<div class="item">
+				</div>
+				<div class="item">
+				</div>
+			</div>
+		</div>
+
+	</div>
 </body>
 <style>
+	.flex{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		align-items: flex-end;
+	}
+	.box{
+		display: flex;
+		width: 400px;
+		height: 400px;
+		background-color: lavender;
+		border: 5px solid blueviolet;
+		gap: 10px;
+	}
+	.box .item{
+		width: 50px;
+		height: 50px;
+		background-color: lightsalmon;
+	}
+
 	.parent{
 		width: 300px;
 		height: 300px;

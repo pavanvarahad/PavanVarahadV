@@ -1,0 +1,45 @@
+.container p { 
+    color: green; 
+}
+
+.container p:nth-child(2) { 
+    color: yellow; 
+}
+
+.container p:nth-child(3) { 
+    color: purple; 
+}
+
+.main p { 
+    color: green; 
+}
+.content .item{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+.content {
+    border: 2px solid black;
+    padding: 20px;
+    width: 500px;
+    display: flex; 
+    justify-content: space-around; 
+}
+
+.parent {
+    width: 540px;
+    height: 500px;
+    position: relative; 
+    border: 2px solid black;
+}
+
+.child {
+    width: 100px;
+    height: 100px;  
+    background-color: brown;
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
